@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <%- include('header') -%>
+  <body>
+    <h1>Todo</h1>
+    <h2>For Admin</h2>
+    <div>
+        <h3>Setting</h3>
+        <p>
+            <table>
+            <tr>
+                <td>Admin's Wallet:</td><td><input id="adminWallet" type="text" size="50"></td>
+            </tr>
+            <tr>
+                <td>Auth Parameter:</td><td><input id="auth" type="text" size="50"></td>
+            </tr>
+            <tr>
+                <td>Contract ID:</td><td><input id="contractId" type="text" size="50"></td>
+            </tr>
+            </table>
+            <button id="setting" size="30">Set</button>
+        </p>
+        <h3>Lottery Management</h3>
+        <p>
+            <button id="startLottery">Start Lottery</button><br />
+        </p>
+        <p><a href="/user" target="_blank">For User</a></p>
+        <p>
+            Voter's Address: <input id="voteAddress" type="text" size="50"><br />
+            <button id="checkVote">Check Vote</button><br />
+            <span id="givenNumber"></span>
+        </p>
+        <p>
+            <button id="closeLottery">Close Lottery</button><br />
+        </p>
+        <p>
+            <button id="startSelection">Start Selection</button><br />
+        </p>
+        <p>
+            <button id="selectWinners">Select Winners</button><br />
+        </p>
+        <p id="transactionStatus"></p>
+        WinNums: <br /><p id="winNums"></p>
+        Winners: <br /><p id="winners"></p>
+    </div>
+    <script src='javascripts/admin.js'></script>
+  </body>
+</html>
